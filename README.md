@@ -1,18 +1,50 @@
-# Getting Started with Create React App
+# E-Bill PDF Uploader
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Start both Front End and Back End server.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Make sure you have the following installed on your machine:
 
-### `npm start`
+Node.js (https://nodejs.org)
+npm (Node Package Manager, comes with Node.js)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Clone this repository or download the source code.
+
+- Navigate to the project directory in your terminal.
+
+- Run the following command to install the dependencies:
+  "npm install"
+
+## Usage
+
+### MOCK API Server
+
+- Move to server directory in your terminal and run command to install dependencies:
+  "npm install"
+
+- Start the mock API server:
+  "npm start"
+
+- This will start the server at http://localhost:3001.
+
+### Front-End
+
+- In a separate terminal again move to project directory, start the React development server: "npm start"
+  This will start the React application at http://localhost:3000
+
+- Open your web browser and visit http://localhost:3000 to access the application.
+
+- Select a PDF file using the file input and click the "Upload" button.
+
+  Only PDF files can be selected.
+  The application will display a preview of the uploaded PDF file.
+  Click on Upload Button to upload it over Server
+  The upload status or any error messages will be shown below the form.
+  Uploaded pdf file will be shown in uploads folder of server directory.
+
 
 ### `npm test`
 
@@ -39,32 +71,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

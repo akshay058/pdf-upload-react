@@ -1,8 +1,8 @@
 const express = require("express");
-const multer = require("multer");
-const cors = require("cors");
-
+const multer = require("multer"); // to handle multi-part form data, make file uploading easier...
+const cors = require("cors"); // for cross-origin access...
 const app = express();
+const port = 3001;
 app.use(cors());
 
 const upload = multer({ dest: "uploads/" });
@@ -13,11 +13,10 @@ app.post("/upload", upload.single("file"), (req, res) => {
   const file = req.file;
 
   if (file) {
-    // Save the file information or perform any necessary processing
-    // Here, we are simply responding with the file path and success status
+    // Saving file in uploads folder and sending response back....
     const filePath = `uploads/${file.filename}`;
 
-    // Simulate a delay to mimic server processing
+    // Delay response time to mimic error...
     setTimeout(() => {
       res.json({
         success: true,
@@ -30,6 +29,6 @@ app.post("/upload", upload.single("file"), (req, res) => {
   }
 });
 
-app.listen(3001, () => {
-  console.log("Mock API server is running");
+app.listen(port, () => {
+  console.log("Mock API server is running on port 3001");
 });

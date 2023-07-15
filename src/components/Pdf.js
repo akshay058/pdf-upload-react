@@ -1,24 +1,27 @@
 import React from "react";
-import { useState } from "react";
+import { useState } from "react"; // hook useState
 import "./Pdf.css";
-
 
 export default function Pdf() {
   const [file, setFile] = useState(null);
   const [uploadStatus, setUploadStatus] = useState("");
   const [error, setError] = useState("");
 
+  //handle file change event
   const handleFileChange = (e) => {
     try {
       const selectedFile = e.target.files[0];
       const fileType = selectedFile.type;
-      const validTypes = ["application/pdf"];
+      const validTypes = ["application/pdf"]; // all type of file upload will be checked here
 
+      // if file type is pdf then execute this....
       if (validTypes.includes(fileType)) {
-        setFile(selectedFile);
+        setFile(selectedFile); // setting selected file
         setError("");
         setUploadStatus("");
-      } else {
+      }
+      // if file is not pdf type then execute this...
+      else {
         setFile(null);
         setError("Please select a PDF file.");
         setUploadStatus("");
@@ -28,6 +31,7 @@ export default function Pdf() {
     }
   };
 
+  //Function to upload file when click submit button...
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -35,6 +39,7 @@ export default function Pdf() {
       const formData = new FormData();
       formData.append("file", file);
 
+      // sending file to mock api server..
       try {
         const response = await fetch("http://localhost:3001/upload", {
           method: "POST",
@@ -62,6 +67,7 @@ export default function Pdf() {
       <form onSubmit={handleSubmit}>
         <input type="file" accept=".pdf" onChange={handleFileChange} />
         {error && <p>{error}</p>}
+        {/* Preview of selecting pdf file before uploading....*/}
         {file && (
           <div>
             <h2>Preview</h2>
