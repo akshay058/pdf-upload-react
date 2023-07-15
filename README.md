@@ -45,7 +45,6 @@ npm (Node Package Manager, comes with Node.js)
   The upload status or any error messages will be shown below the form.
   Uploaded pdf file will be shown in uploads folder of server directory.
 
-
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -71,7 +70,14 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+## Screenshots
+
+![App Screenshot](/src/images/pdfupload1.jpg?raw=true "Optional Title")
+
+![App Screenshot](/src/images/pdfupload2.jpg?raw=true "Optional Title")
+
+![App Screenshot](/src/images/pdfupload3.jpg?raw=true "Optional Title")
