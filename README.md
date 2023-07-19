@@ -1,6 +1,6 @@
 # E-Bill PDF Uploader
 
-Start both Front End and Back End server.
+Start both Front End and Back End server..
 
 ## Prerequisites
 
