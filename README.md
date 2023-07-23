@@ -11,7 +11,7 @@ npm (Node Package Manager, comes with Node.js)
 
 ## Installation
 
-- Clone this repository or download the source code.
+- Clone this repository or download the source code..
 
 - Navigate to the project directory in your terminal.
 
